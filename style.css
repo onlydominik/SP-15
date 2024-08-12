@@ -82,7 +82,7 @@ body {
 }
 
 .card-main {
-  background: right 2em top no-repeat url(../images/bg-pattern-quotation.svg);
+  background: right 2em top no-repeat url(.//images/bg-pattern-quotation.svg);
 }
 
 .card-main img {
