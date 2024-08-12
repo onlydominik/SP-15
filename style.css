@@ -43,8 +43,8 @@ h6 {
   --fw-medium: 500;
   --fw-bold: 600;
 
-  --fs-extra-small: 85%;
-  --fs-small: 90%;
+  --fs-extra-small: 90%;
+  --fs-small: 95%;
 
   --cm-violet: hsl(263, 55%, 52%);
   --cm-light-violet: hsl(263, 63%, 67%);
@@ -67,6 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin: 5em 0 5em 0;
 }
 
 .card {
@@ -82,7 +83,12 @@ body {
 }
 
 .card-main img {
-  border: 3px solid var(--cm-light-violet);
+  border: 2px solid var(--cm-light-violet);
+  width: 3.3em;
+}
+
+.card__description {
+  color: hsla(0, 0%, 100%, 0.706);
 }
 
 .card--violet {
@@ -99,6 +105,17 @@ body {
   background-color: var(--cm-white);
 }
 
+.card--white p {
+  color: hsl(217, 19%, 35%);
+}
+.card--white .profile__name {
+  color: hsl(219, 29%, 14%);
+}
+
+.card--white h2 {
+  color: hsl(219, 29%, 14%);
+}
+
 .card--dark-blue {
   background-color: var(--cm-dark-blue);
   color: var(--cm-white);
@@ -110,16 +127,20 @@ body {
 
 .profile__picture {
   border-radius: 50%;
-  width: 4em;
+  width: 3em;
 }
 
 .profile {
   display: flex;
   align-items: center;
-  gap: 0.8em;
+  gap: 1.5em;
   font-size: var(--fs-extra-small);
 }
 
 .profile__name {
   font-weight: var(--fw-bold);
+}
+
+.profile__status {
+  color: hsla(0, 0%, 100%, 0.505);
 }
